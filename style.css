@@ -1,23 +1,22 @@
-* {
+  * {
     margin: 0;
     padding: 0;
   }
 
-body {
-    background-color: coral;
-}  
+  body {
+    background-color: #0a010a;
+  }
 
-.slide {
+  .container {
     min-width: 100%;
     display: inline-block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    scroll-snap-align: center;
     background-color: #0a010a;
   }
 
-.menu {
+   .menu{   
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -37,14 +36,14 @@ body {
     width: 300px;
   }
   
-  
   .menutitulo {
+    margin: auto;
     text-align: center;
     font-size: 2.5em;
     margin-bottom: 20px;
     color: #6F6A6E;
     text-decoration: double;
-      
+    background-color: #0a010a;
   }
   
   .menuimagem {
@@ -58,20 +57,54 @@ body {
   }
   
   .nome {
-    font-size: 1.5em;
+    font-size: 1.4em;
     color: #333;
-  }
-  
-  .descricao2 {
-    font-size: 13px;
-    color: #686565;
-    font-family: "Jersey 25", sans-serif;
-    text-align: justify;
   }
   
   .cor {
     font-size: 1.2em;
-    color: rgb(0,255,0);
+    color: #daa520;
     font-weight: bold;
     text-decoration: none;
+  }
+
+  .estilo {
+    min-width: 100%;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a010a;
+  }
+
+  .menutipo {
+    max-width: 1200px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 20px;
+    text-align: center;
+    height: 1000px;
+    width: 750px;
+  }
+
+  .tipoitem {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .tipoimagem {
+    width: 150px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .nometipo {
+    padding: 20px;
+    font-size: 1.5em;
+    color: #333;
   }
