@@ -80,7 +80,7 @@ body {
 }
 
 .menutitulo {
-  margin: auto;
+  margin: center;
   text-align: center;
   font-size: 2.5em;
   margin-bottom: 20px;
@@ -132,11 +132,13 @@ body {
   max-width: 1200px;
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  column-gap: 75px;
   text-align: center;
-  height: 1000px;
-  width: 750px;
+  height: 900px;
+  width: 1000px;
+  margin: auto;
 }
 
 .tipoitem {
@@ -150,7 +152,7 @@ body {
 
 .tipoimagem {
   width: 150px;
-  height: 100%;
+  height: auto;
   object-fit: cover;
 }
 
