@@ -1,10 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: #333;
+  background-color: #0a010a;
 }
 
 .menu-toggle {
@@ -17,7 +21,6 @@ body {
   cursor: pointer;
   z-index: 1100;
   transition: left 0.5s ease;
-  margin: 0;
 }
 
 .menu-toggle:hover {
@@ -63,7 +66,6 @@ body {
 .menu-content a:hover {
   color: #007BFF;
 }
-
 
 .container {
 min-width: 100%;
@@ -142,7 +144,10 @@ margin: center;
 text-align: center;
 font-size: 2.5em;
 margin-bottom: 20px;
-color: #6F6A6E;
+/* 
+color: #FF3B3F;
+*/
+color: #FF5C5F;
 text-decoration: double;
 background-color: #0a010a;
 }
@@ -197,6 +202,7 @@ text-align: center;
 height: 550px;
 width: 1000px;
 margin: auto;
+background-color: #0a010a;
 }
 
 .tipoitem {
