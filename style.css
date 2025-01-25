@@ -226,6 +226,7 @@ color: #333;
 @media (max-width: 768px) {
   html {
       scroll-behavior: smooth;
+      overflow-x: hidden;
   }
   
   * {
@@ -369,7 +370,7 @@ color: #333;
   .menutitulo {
   margin: center;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.6em;
   margin-bottom: 20px;
   color: #FF5C5F;
   text-decoration: double;
@@ -436,7 +437,7 @@ color: #333;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 450px;
+  width: 330px;
   height: 150px;
   }
   
