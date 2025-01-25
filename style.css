@@ -225,20 +225,20 @@ color: #333;
 
 @media (max-width: 768px) {
   html {
-      scroll-behavior: smooth;
-      overflow-x: hidden;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
   }
-  
+
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   body {
     background-color: #0a010a;
   }
-  
+
   .menu-toggle {
     position: fixed;
     background-color: #333;
@@ -250,11 +250,11 @@ color: #333;
     z-index: 1100;
     transition: left 0.5s ease;
   }
-  
+
   .menu-toggle:hover {
     background-color: #444;
   }
-  
+
   .menu-vertical {
     position: fixed;
     top: 0;
@@ -267,190 +267,186 @@ color: #333;
     transition: left 0.5s ease;
     z-index: 1000;
   }
-  
+
   .menu-vertical.open {
     left: 0;
   }
-  
+
   .menu-content {
     margin: 60px 20px;
   }
-  
+
   .menu-content ul {
     list-style: none;
     padding: 0;
   }
-  
+
   .menu-content li {
     margin: 20px 0;
   }
-  
+
   .menu-content a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
   }
-  
+
   .menu-content a:hover {
     color: #007BFF;
   }
-  
+
   .container {
-  min-width: 100%;
-  display: inline-block;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #0a010a;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a010a;
   }
-  
+
   .menu {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 20px;
-  text-align: center;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
   }
-  
+
   .menuitem {
-  display: flex;
-  align-items: center;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  width: 300px;
-  height: 200px;
-  perspective: 1000px;
-  margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 90%;
+    max-width: 300px;
+    height: 200px;
+    margin: 0 auto;
   }
-  
+
   .card {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: transform 0.6s ease-in-out;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-in-out;
   }
-  
+
   .menuitem:hover .card {
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
   }
-  
-  .card-frente, .card-verso {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card-frente {
-  background-color: white;
-  display: flex;
-  }
-  
+
+  .card-frente,
   .card-verso {
-  background-color: #f8f8f8;
-  transform: rotateY(180deg);
-  justify-content: center;
-  align-items: center;
-  color: #333;
-  text-align: justify;
-  font-size: 14px;
-  padding: 0 20px;
-  box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-  
+
+  .card-frente {
+    background-color: white;
+  }
+
+  .card-verso {
+    background-color: #f8f8f8;
+    transform: rotateY(180deg);
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    text-align: justify;
+    font-size: 14px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
   .menutitulo {
-  margin: center;
-  text-align: center;
-  font-size: 1.6em;
-  margin-bottom: 20px;
-  color: #FF5C5F;
-  text-decoration: double;
-  background-color: #0a010a;
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    color: #FF5C5F;
+    background-color: #0a010a;
   }
-  
+
   .menuimagem {
-  width: 120px;
-  height: auto;
-  object-fit: cover;
+    width: 100px;
+    height: auto;
+    object-fit: cover;
   }
-  
+
   .menuinfo {
-  padding: 20px;
+    padding: 20px;
   }
-  
+
   .nome {
-  font-size: 1.4em;
-  color: #333;
-  font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
   }
-  
+
   .cor {
-  font-size: 1.2em;
-  color: #daa520;
-  font-weight: bold;
-  text-decoration: none;
+    font-size: 1em;
+    color: #daa520;
+    font-weight: bold;
+    text-decoration: none;
   }
-  
+
   .descricao {
-  font-size: 14px;
-  color: #333;
-  padding: 10px;
-  text-align: center;
+    font-size: 14px;
+    color: #333;
+    padding: 10px;
+    text-align: center;
   }
-  
+
   .estilo {
-  min-width: 100%;
-  display: inline-block;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #0a010a;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a010a;
   }
-  
+
   .menutipo {
-  max-width: 1200px;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 50px;
-  column-gap: 75px;
-  text-align: center;
-  height: 550px;
-  width: 1000px;
-  margin: auto;
-  background-color: #0a010a;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    margin: auto;
+    background-color: #0a010a;
   }
-  
+
   .tipoitem {
-  display: flex;
-  align-items: center;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  width: 330px;
-  height: 150px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 330px;
+    height: 110px;
+    min-height: 110px;
+    margin: 0 auto;
   }
-  
+
   .tipoimagem {
-  width: 150px;
-  height: auto;
-  object-fit: cover;
+    width: 120px;
+    height: auto;
+    object-fit: cover;
   }
-  
+
   .nometipo {
-  padding: 20px;
-  font-size: 1.5em;
-  color: #333;
+    padding: 10px;
+    font-size: 1.2em;
+    color: #333;
   }
 }
